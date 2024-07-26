@@ -5,8 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        "sm": "480px",
+      },
+      fontFamily: {
+        josefin: ["Josefin Sans", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 }
-
