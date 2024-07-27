@@ -7,9 +7,6 @@ export default {
   darkMode: 'class', 
   theme: {
     extend: {
-      screens: {
-        "sm": "480px",
-      },
       fontFamily: {
         josefin: ["Josefin Sans", "sans-serif"],
       },
