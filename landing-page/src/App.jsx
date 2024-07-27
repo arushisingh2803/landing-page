@@ -24,31 +24,76 @@ const App = () => {
               src={darkMode ? moonIcon : sunIcon} 
               alt={darkMode ? 'Light Mode' : 'Dark Mode'}
               onClick={handleToggle}
-              className="w-8 h-8 cursor-pointer"
-            />
+              className="w-8 h-8 cursor-pointer"/>
           </div>
         </div>
       </nav>
 
-      <section id="about" className={`${darkMode ? 'bg-gray-900' : 'bg-white'} h-max w-screen py-60 flex items-center justify-center`}>
-        <div className="max-w-full top-0 left-0 text-left px-6">
+      <section id="about" className={`${darkMode ? 'bg-gray-900' : 'bg-white'} min-h-screen w-screen py-60 flex items-center justify-center`}>
+        <div className="max-w-full text-left px-6">
           <h1 className="text-5xl font-bold mb-4 hover:italic">Hi, I am Arushi👋</h1>
-          <br></br>
+          <br />
           <p className="text-2xl">I am a third year computer science student working towards being a software engineer!👩🏽‍💻</p>
         </div>
       </section>
 
-      <section id="background" className={`${darkMode ? 'bg-gray-900' : 'bg-white'} h-max w-screen py-60`}>
-        <div className="max-w-full top-0 left-0 px-6">
-          <h1 className="text-2xl font-bold mb-4 text-left text-blue-500 pl-20">background</h1>
-          <p className="text-xl pl-60 pr-20 text-right">I am currently studying Computer Science at Technological University of Dublin. I currently cover modules such as Object Oriented Programming, Data Structures and Algorithms, Operating Systems, Databases, etc in my course. <br></br><br></br>I have a keen interest in machine learning and AI. I have been pursuing the Machine Learning Specialisation by Andrew Yang on Coursera. My goal is to further build projects to apply theoritical concepts of ML. I also like to dabble in Front-End development(made this website from scratch!). <br></br> <br></br> When I am not in front of a computer screen, I like to listen to music or read books. I am also the Secretary of the South Asian Society at TUD, where I help organise and manage cultural events for 500+ members.</p>
+      <section id="background" className={`${darkMode ? 'bg-gray-900' : 'bg-white'} w-screen py-20`}>
+        <div className="max-w-full px-6 sm:px-20">
+          <h1 className="text-2xl font-bold mb-4 text-left text-blue-400 pl-4 sm:pl-0">background</h1>
+          <p className="text-xl flex pt-8 pl-4 sm:pl-0 pr-4 sm:pr-0 text-justify">
+            I am currently studying Computer Science at Technological University of Dublin. I currently cover modules such as Object Oriented Programming, Data Structures and Algorithms, Operating Systems, Databases, etc in my course. <br /><br />
+            I have a keen interest in machine learning and AI. I have been pursuing the Machine Learning Specialisation by Andrew Yang on Coursera. My goal is to further build projects to apply theoretical concepts of ML. I also like to dabble in Front-End development (made this website from scratch!). <br/><br />
+            When I am not in front of a computer screen, I like to listen to music or read books. I am also the Secretary of the South Asian Society at TUD, where I help organise and manage cultural events for 500+ members.
+          </p>
         </div>
       </section>
 
-      <section id="skills" className={`${darkMode ? 'bg-gray-900' : 'bg-white'} h-max w-screen py-60`}>
-        <div className="max-w-full top-0 left-0 px-6">
-          <h1 className="text-2xl font-bold mb-4 text-left text-blue-500 pl-20">skills</h1>
-          <p className="text-xl pl-60 pr-20 text-right"></p>
+      <section id="skills" className={`${darkMode ? 'bg-gray-900' : 'bg-white'} w-screen py-20`}>
+        <div className="max-w-full px-6 sm:px-20">
+          <h1 className="text-2xl font-bold mb-4 text-left text-blue-400 pl-4 sm:pl-0">skills</h1>
+          <div className="overflow-x-auto">
+            <table className="table-auto w-full text-right">
+              <thead>
+                <tr>
+                  <th className="px-4 py-2">LANGUAGES</th>
+                  <th className="px-4 py-2">FRAMEWORKS</th>
+                  <th className="px-4 py-2">TECHNOLOGIES</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="px-4 py-2">Python</td>
+                  <td className="px-4 py-2">Django</td>
+                  <td className="px-4 py-2">Git/GitHub</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-2">Java</td>
+                  <td className="px-4 py-2">Processing</td>
+                  <td className="px-4 py-2">Bash</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-2">C</td>
+                  <td className="px-4 py-2">Numpy</td>
+                  <td className="px-4 py-2">Jira</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-2">JavaScript</td>
+                  <td className="px-4 py-2">React</td>
+                  <td className="px-4 py-2">Microsoft Suite</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-2">HTML/CSS</td>
+                  <td className="px-4 py-2">Tailwind</td>
+                  <td className="px-4 py-2">Figma</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-2">SQL</td>
+                  <td className="px-4 py-2">WebAPI</td>
+                  <td className="px-4 py-2">Postgres/SQLite</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </section>
 
@@ -56,9 +101,9 @@ const App = () => {
         <div className="text-center px-6">
           <h2 className="text-3xl font-bold mb-4">Contact Me</h2>
           <div className="mt-6">
-            <a href="" className="text-blue-600 hover:underline">LinkedIn</a>
+            <a href="#" className="text-blue-600 hover:underline">LinkedIn</a>
             <span className="mx-2">|</span>
-            <a href="" className="text-blue-600 hover:underline">GitHub</a>
+            <a href="#" className="text-blue-600 hover:underline">GitHub</a>
           </div>
         </div>
       </section>
