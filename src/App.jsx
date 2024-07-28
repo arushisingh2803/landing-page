@@ -142,6 +142,15 @@ const App = () => {
           </div>
         </div>
       </section>
+
+      <section id="projects" className={`${darkMode ? 'bg-gray-900' : 'bg-white'} w-screen py-20`}>
+        <div className="max-w-full px-6 sm:px-20">
+          <h1 className="text-2xl font-bold mb-4 text-left text-blue-400 pl-4 sm:pl-0">projects</h1>
+          <p className="text-xl flex pt-8 pl-4 sm:pl-0 pr-4 sm:pr-0">
+            upcoming!
+          </p>
+        </div>
+      </section>
  
       <section id="contact" className={`${darkMode ? 'bg-gray-900' : 'bg-white'} flex w-screen items-center justify-center py-60`}>
         <div className="text-center px-6">
