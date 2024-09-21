@@ -65,7 +65,7 @@ const App = () => {
               <tbody>
                 <tr>
                   <td className="px-4 py-2">Python</td>
-                  <td className="px-4 py-2">Django</td>
+                  <td className="px-4 py-2">Responses</td>
                   <td className="px-4 py-2">Git/GitHub</td>
                 </tr>
                 <tr>
@@ -75,7 +75,7 @@ const App = () => {
                 </tr>
                 <tr>
                   <td className="px-4 py-2">C</td>
-                  <td className="px-4 py-2">Numpy</td>
+                  <td className="px-4 py-2">Pandas</td>
                   <td className="px-4 py-2">Jira</td>
                 </tr>
                 <tr>
@@ -90,7 +90,7 @@ const App = () => {
                 </tr>
                 <tr>
                   <td className="px-4 py-2">SQL</td>
-                  <td className="px-4 py-2">WebAPI</td>
+                  <td className="px-4 py-2">APIs</td>
                   <td className="px-4 py-2">Postgres/SQLite</td>
                 </tr>
               </tbody>
